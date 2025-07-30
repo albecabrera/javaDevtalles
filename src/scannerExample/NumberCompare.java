@@ -16,6 +16,7 @@ public class NumberCompare {
         int sum = firstNumber + secondNumber;
         System.out.println("La suma de a + b = " + (sum));
         System.out.println("La diferencia de a - b = " + (difference));
+
     }
 }
 
