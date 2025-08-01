@@ -9,6 +9,8 @@ public class Main {
         xAxis = 10;
         yAxis = 20;
         age=30;
+        int age2 = 47;
+        System.out.println(" = " + age2);
         System.out.println("age = " + age);
 
         System.out.println("xAxis = " + xAxis);
