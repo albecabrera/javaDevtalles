@@ -6,6 +6,7 @@ public class House {
     int windows;
     double size;
 
+
     // Métodos
     void openDoor() {
         System.out.println("La puerta está abierta");
