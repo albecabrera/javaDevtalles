@@ -8,7 +8,7 @@ public class BankAccount {
         this.accountHolder = accountHolder;
         this.balance = balance;
     }
-    public void doposit(double amount){
+    public void deposit(double amount){
         if (amount>0){
             balance+= amount;
             System.out.println("Depósito exitoso!!!");
@@ -21,7 +21,7 @@ public class BankAccount {
             balance-=amount;
             System.out.println("Extracción exitosa!!!");
         }else{
-            System.out.println("Fondos insuficiente o monto inválido!!!");
+            System.out.println("Fondos insuficientes o monto inválido!!!");
         }
     }
     public void displayBalance(){
