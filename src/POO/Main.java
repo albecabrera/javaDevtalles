@@ -3,25 +3,27 @@ package POO;
 public class Main {
     public static void main(String[] args) {
 
-        /*Vehicle vehicle = new Vehicle("Fiat", "Duna", 2000);
-                vehicle.setYear(2020);
+        /*poo.Vehicle vehicle = new poo.Vehicle("Fiat", "Duna", 2000);
+
+        vehicle.setYear(2001);
 
         System.out.println(vehicle.toString());*/
 
-        Vehicle myCar = new Car("Toyota", "Corolla", 2024, 4);
-        Vehicle motorcycle = new Motorcycle("Honda", "CBR", 2021, false);
+        Vehicle myMar =
+                new Car("Toyota", "Corolla", 2022, 4);
+        Vehicle motorcycle =
+                new Motorcycle("Honda", "CBR", 2021, false);
 
-        myCar.start();
-        motorcycle.start();
+        ((Motorcycle)motorcycle).start();
+        ((Car)myMar).start();
+
+        ((Car)myMar).setDoors(10);
 
         printVehicle(motorcycle);
-        printVehicle(myCar);
-
-        ((Car)myCar).setDoors(5);
+        printVehicle(myMar);
     }
 
     public static void printVehicle(Vehicle vehicle){
         System.out.println(vehicle.toString());
-
     }
 }

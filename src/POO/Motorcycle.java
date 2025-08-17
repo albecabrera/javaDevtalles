@@ -1,25 +1,27 @@
 package POO;
 
-public class Vehicle extends Vehicle{
+public class Motorcycle extends Vehicle{
 
     private boolean hasSidecar;
+    private Engine engine;
 
     public Motorcycle(String brand, String model, int year, boolean hasSidecar) {
         super(brand, model, year);
         this.hasSidecar = hasSidecar;
-    }
-    public void popWheeling(){
-        System.out.println("La moto está haciendo willy");
+        this.engine = new Engine();
     }
 
-    @Override
+    public void popWheelie(){
+        System.out.println("La moto está haciendo willy");
+    }
     public void start() {
         System.out.println("La moto está encendida");
+        engine.start();
     }
 
     @Override
     public String toString() {
-        return "Motorcycle{" +
+        return "poo.Motorcycle{" +
                 "hasSidecar=" + hasSidecar +
                 '}' + super.toString();
     }
